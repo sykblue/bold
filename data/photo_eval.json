@@ -1,0 +1,630 @@
+{
+  "source": "hairloss",
+  "source_title": "머리 사진 탈모/정상 (Kaggle sithukaungset/hairlossdataset)",
+  "photo_kind": "머리 전체가 보이는 일반 사진",
+  "classes": [
+    "정상",
+    "탈모"
+  ],
+  "clean_log": {
+    "원본 사진": 1114,
+    "정답이 엇갈린 같은 사진(제외)": 14,
+    "같은 정답 안 중복(1장만 남김)": 3,
+    "거의 같은 사진 묶음(2장 이상)": 286,
+    "정답이 엇갈린 거의 같은 사진(제외)": 6,
+    "학습에 쓴 사진": 1091
+  },
+  "rounds": [
+    {
+      "accuracy": 76.63551401869158,
+      "recall": {
+        "정상": 76.19047619047619,
+        "탈모": 77.06422018348624
+      },
+      "confusion": [
+        [
+          80,
+          25
+        ],
+        [
+          25,
+          84
+        ]
+      ],
+      "bald_precision": 77.06422018348624,
+      "bald_recall": 77.06422018348624,
+      "baseline": 49.06542056074766,
+      "n_train": 877,
+      "n_val": 214
+    },
+    {
+      "accuracy": 74.14634146341463,
+      "recall": {
+        "정상": 73.0,
+        "탈모": 75.23809523809524
+      },
+      "confusion": [
+        [
+          73,
+          27
+        ],
+        [
+          26,
+          79
+        ]
+      ],
+      "bald_precision": 74.52830188679245,
+      "bald_recall": 75.23809523809524,
+      "baseline": 48.78048780487805,
+      "n_train": 886,
+      "n_val": 205
+    },
+    {
+      "accuracy": 73.7991266375546,
+      "recall": {
+        "정상": 75.83333333333333,
+        "탈모": 71.55963302752293
+      },
+      "confusion": [
+        [
+          91,
+          29
+        ],
+        [
+          31,
+          78
+        ]
+      ],
+      "bald_precision": 72.89719626168224,
+      "bald_recall": 71.55963302752293,
+      "baseline": 47.59825327510917,
+      "n_train": 862,
+      "n_val": 229
+    },
+    {
+      "accuracy": 78.04878048780488,
+      "recall": {
+        "정상": 75.23809523809524,
+        "탈모": 81.0
+      },
+      "confusion": [
+        [
+          79,
+          26
+        ],
+        [
+          19,
+          81
+        ]
+      ],
+      "bald_precision": 75.70093457943925,
+      "bald_recall": 81.0,
+      "baseline": 48.78048780487805,
+      "n_train": 886,
+      "n_val": 205
+    },
+    {
+      "accuracy": 71.55963302752293,
+      "recall": {
+        "정상": 70.0,
+        "탈모": 73.14814814814815
+      },
+      "confusion": [
+        [
+          77,
+          33
+        ],
+        [
+          29,
+          79
+        ]
+      ],
+      "bald_precision": 70.53571428571429,
+      "bald_recall": 73.14814814814815,
+      "baseline": 49.54128440366973,
+      "n_train": 873,
+      "n_val": 218
+    }
+  ],
+  "accuracy": 74.83787912699772,
+  "accuracy_sd": 2.2735658035723683,
+  "baseline": 48.753186769856526,
+  "confusion": [
+    [
+      400,
+      140
+    ],
+    [
+      130,
+      401
+    ]
+  ],
+  "n_labeled": 1091,
+  "n_features": 172,
+  "label_counts": {
+    "탈모": 547,
+    "정상": 544
+  },
+  "examples": [
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/sithuimagess37.jpg",
+      "label": "정상",
+      "pred": "탈모",
+      "conf": 0.5641168355941772
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/image6.jpeg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999014139175415
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess233.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.6398875117301941
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0095.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9583118557929993
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0072.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.999922513961792
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess161.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.999413013458252
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess30.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9988616704940796
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/Hair-color-for-men-honey-brown-highlights-shutterstock.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999802112579346
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/48-BEFORE.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9985289573669434
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess207.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9418320655822754
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/scalp-of-young-caucasian-man-seen-from-above-and-showcasing-a-hair-loss-problem-RBRFF6.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9980143308639526
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/images13.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.8340712189674377
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0024.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9771493077278137
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/2019-hairstyles_-_Waves-417x500.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9996954202651978
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess16.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9501532912254333
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/stock-photo-hair-of-older-men-gray-hair-mixed-with-black-hair-1020922633.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.7948583960533142
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/CHEBE_HAIR_RUTH_OSSAI_22.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999994039535522
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/balding-man-s-head-26966075.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.5953032970428467
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/matthew-mens-short-haircut-thick-hair-man-for-himself-4.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.732897162437439
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0015.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9584829211235046
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0063.jpg",
+      "label": "정상",
+      "pred": "탈모",
+      "conf": 0.9968164563179016
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/healthyscalpba.png",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.8374137282371521
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/sithuimagess23.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.8377435803413391
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/sithuimages4.jpeg",
+      "label": "정상",
+      "pred": "탈모",
+      "conf": 0.5736714601516724
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/image.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9892038702964783
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/ern-hair-loss-in-southeast-asian-chinese-elder-man-isolated-on-white-2GAR7JX.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.5989928245544434
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/tp-wavy-hair-men-4.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9994483590126038
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/depositphotos_43483807-stock-photo-bald-men.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999997615814209
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess229.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.8297901153564453
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess136.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999380111694336
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/63077145-asian-female-head-with-hair-loss.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999994039535522
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimages26.jpeg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.7111362218856812
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/how_natural_black_hair_at_work_became_a_civil_rights_issue_3_1050x700.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999539852142334
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess305.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.999881386756897
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/girl-pic.png",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9981886744499207
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0037.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9807985424995422
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/H27a866177fa0482aab2a049ca9de5d4c0.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9996917247772217
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair00012.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999605417251587
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess240.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999963045120239
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/sithuimagess12.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9893061518669128
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess80.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9943755865097046
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair114.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9987264275550842
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/hairstyle-for-kids.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9775882959365845
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/depositphotos_82053230-stock-photo-hair-loss-and-grey-hair.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.5916309952735901
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/gallery-6-15-76-farrah-fawcett-news-photo-92995858-1557971154.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999964237213135
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/best-long-hairstyles-men-dreadlocks-luxe-digital.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9958166480064392
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/eu.53fe351a-e488-4b0f-9bcb-7709456b5bcb.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.9016029834747314
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess195.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9995160102844238
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/images29.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.997150719165802
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess167.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 1.0
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/413138845.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9959627985954285
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess94.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9998643398284912
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/sithuimagess29.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9054184556007385
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/images24.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.5479305386543274
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/hair-loss-parting-singapore.png",
+      "label": "정상",
+      "pred": "탈모",
+      "conf": 0.6777324676513672
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/images77.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.7664761543273926
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9725664258003235
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/eu.902da8c4-e34f-4fc8-8aa3-229f5dcd75fe.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9998797178268433
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimages23.jpeg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.8650122880935669
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0002.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999957084655762
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0014.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9706074595451355
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/7fa862ea002b0d9ea821c553d721685f.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9279996156692505
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/images14.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.9369717836380005
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/Copy-of-website-header.png",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.8173806071281433
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/depositphotos_270897638-stock-photo-mesotherapy-hair-head-traces-injections.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.994855523109436
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/11TIKTOKHAIR-1-videoSixteenByNine3000.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999293088912964
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0023.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9305644631385803
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/eu.5b6f3f83-50aa-4683-8a0a-a73a3c1f9893.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9941858053207397
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/eu.f7beccef-60d5-4f3a-b913-eaea5d40f466.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999837875366211
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimages16.jpeg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.7577416896820068
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/serious-hair-loss-problem-for-health-care-shampoo-and-beauty-product-concept.jpg",
+      "label": "탈모",
+      "pred": "정상",
+      "conf": 0.6019999384880066
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/-hair-causing-itchy-scalp-eczema-ringworm-and-fungus-on-the-scalp-1291812787.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999350309371948
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess276.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9991281628608704
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/eu.2377f98a-116a-496b-9274-441e9f41e2a7.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999061822891235
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/menhair0036.jpeg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9926139116287231
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/tonyimagess76.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999792575836182
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/result-of-heredity-hormonal-changes-or-a-normal-part-of-aging-free-photo.JPG.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.8619571328163147
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/woman2520with2520curly2520hair.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.9999762773513794
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/bald/images48.jpg",
+      "label": "탈모",
+      "pred": "탈모",
+      "conf": 0.9999215602874756
+    },
+    {
+      "path": "photo_sets/hairloss/data0330/notbald/0cfa1c89-0ff0-4e5e-b940-baedfbf50ba3-Chloe_Townsend.jpg",
+      "label": "정상",
+      "pred": "정상",
+      "conf": 0.999762237071991
+    }
+  ]
+}

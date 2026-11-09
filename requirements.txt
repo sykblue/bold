@@ -1,0 +1,9 @@
+streamlit>=1.40
+pandas>=2.2
+plotly>=5.20
+openpyxl>=3.1
+pillow>=10
+numpy>=1.26
+# 원본을 다시 받을 때만 필요 (python clean.py --download)
+kaggle>=1.7
+six

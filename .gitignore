@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+kaggle.json
+access_token
+data/images/
+data/_zip/
+data/photo_sets/
